@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import getAsyncComponent from 'Src/asyncComponent'
+import logo from './logo.png'
+import githubIcon from './github.png'
+import './app.scss'
 
 const ComputedOne = getAsyncComponent(() => import('Components/ComputedOne'))
 const ComputedTwo = getAsyncComponent(() => import('Components/ComputedTwo'))
@@ -9,11 +12,24 @@ function App() {
 
   return (
     <div className='app'>
-      <ComputedOne a={1} b={2} />
-      {showTwo && <ComputedTwo a={3} b={4} />}
-      <button type='button' onClick={() => setShowTwo(true)}>
-        显示Two啊啊啊
-      </button>
+      <header className='header-wrapper'>
+        <p className='author-name'>Vortesnail</p>
+        <div className='about-info'>
+          <div className='logo'>
+            <img
+              src={githubIcon}
+              onClick={() => {
+                window.open('https//www.github.com/vortesnail')
+              }}
+              alt=''
+            />
+          </div>
+        </div>
+      </header>
+      <div className='logo-wrapper'>
+        <img src={logo} alt='' />
+        <p>This is a simple function that can let you import react component async from split chunks.</p>
+      </div>
     </div>
   )
 }
