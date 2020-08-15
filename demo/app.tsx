@@ -19,7 +19,7 @@ function App() {
             <img
               src={githubIcon}
               onClick={() => {
-                window.open('https//www.github.com/vortesnail')
+                window.open('https://www.github.com/vortesnail')
               }}
               alt=''
             />

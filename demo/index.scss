@@ -6,3 +6,8 @@ body {
 p {
   margin: 0;
 }
+
+::selection {
+  color: #fff;
+  background-color: rgb(43, 152, 35);
+}
