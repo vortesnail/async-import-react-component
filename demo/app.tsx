@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ReactLoading from 'react-loading'
 import getAsyncComponent from 'Src/asyncComponent'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { base16AteliersulphurpoolLight } from 'react-syntax-highlighter/dist/esm/styles/prism'
@@ -9,7 +10,7 @@ import './app.scss'
 const ComponentOne = getAsyncComponent(() => import('Components/ComponentOne'))
 const ComponentTwo = getAsyncComponent({
   resolve: () => import('Components/ComponentTwo'),
-  loading: <div>ComponentTwo is loading...</div>,
+  loading: <ReactLoading type='cylon' color='#2b9823' height={60} width={60} />,
   error: <div>An error has occurred, please check the component you import.</div>,
   delay: 3000,
 })
