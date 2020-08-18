@@ -80,7 +80,7 @@ function App() {
             <button type='button' onClick={() => setShowOne(true)}>
               Load Component One
             </button>
-            {showOne && <ComponentOne />}
+            {showOne && <ComponentOne name='vortesnail' />}
             <button type='button' onClick={() => setShowTwo(true)}>
               Load Component Two
             </button>

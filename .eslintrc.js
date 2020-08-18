@@ -45,7 +45,6 @@ module.exports = {
         ts: 'never',
         tsx: 'never',
         js: 'never',
-        json: 'never',
       },
     ],
     'import/no-extraneous-dependencies': [ERROR, { devDependencies: true }],

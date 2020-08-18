@@ -1,8 +1,13 @@
 import React from 'react'
 import './index.scss'
 
-function ComponentOne() {
-  return <p className='component-one'>Hi, I am ComponentOne!</p>
+interface Props {
+  name: string
+}
+
+function ComponentOne(props: Props) {
+  const { name } = props
+  return <p className='component-one'>Hi, I am ComponentOne!{name}</p>
 }
 
 export default ComponentOne

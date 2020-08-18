@@ -46,7 +46,7 @@ module.exports = {
   },
   output: {
     filename: `js/[name]${isDev ? '' : '.[hash:8]'}.js`,
-    path: resolve(PROJECT_PATH, './dist'),
+    path: resolve(PROJECT_PATH, './demo/dist'),
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.json'],
@@ -145,7 +145,7 @@ module.exports = {
         {
           context: resolve(PROJECT_PATH, './public'),
           from: '*',
-          to: resolve(PROJECT_PATH, './dist'),
+          to: resolve(PROJECT_PATH, './demo/dist'),
           toType: 'dir',
         },
       ],
