@@ -1,6 +1,6 @@
 const isRollupBundle = process.env.ROLLUP_ENV === 'bundle'
 
-module.exports = function (api) {
+module.exports = (api) => {
   api.cache(true)
 
   return {
