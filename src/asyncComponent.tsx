@@ -63,7 +63,9 @@ function getAsyncComponent<T>(options: Options<T> | PromiseFun<T>) {
     }
 
     componentWillUnmount() {
-      timer && clearTimeout(timer)
+      if (timer) {
+        clearTimeout(timer)
+      }
       timer = null
     }
 
