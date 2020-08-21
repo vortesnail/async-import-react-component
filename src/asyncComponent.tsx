@@ -20,6 +20,7 @@ function getAsyncComponent<T>(options: Options<T> | PromiseFun<T>) {
   let LoadingComponent: ReactNode = null
   let ErrorComponent: ReactNode = null
   let delay = 0
+  let timer: any = null
 
   if (typeof options === 'function') {
     resolve = options
@@ -48,7 +49,7 @@ function getAsyncComponent<T>(options: Options<T> | PromiseFun<T>) {
     async componentDidMount() {
       const { default: ResultComponent } = await resolve()
       if (ResultComponent) {
-        setTimeout(() => {
+        timer = setTimeout(() => {
           this.setState({
             ResultComponent,
             status: 'normal',
@@ -59,6 +60,11 @@ function getAsyncComponent<T>(options: Options<T> | PromiseFun<T>) {
           status: 'error',
         })
       }
+    }
+
+    componentWillUnmount() {
+      timer && clearTimeout(timer)
+      timer = null
     }
 
     render() {
