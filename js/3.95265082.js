@@ -1,0 +1,2 @@
+/** @preserve Powered by react-ts-quick-starter (https://github.com/vortesnail/react-ts-quick-starter) */
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{471:function(n,o,e){},473:function(n,o,e){"use strict";e.r(o);var t=e(0),a=e.n(t);e(471);o.default=function(){return a.a.createElement("p",{className:"component-two"},"Hi, I am ComponentTwo!")}}}]);
