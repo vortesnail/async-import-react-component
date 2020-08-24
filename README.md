@@ -4,6 +4,9 @@
  <p align="center">Allows you to load React components asynchronously!</p>
 </p>
   <p align="center">
+    <a href="https://github.com/vortesnail/async-import-react-component/actions">
+      <img alt="Build And Test" src="https://img.shields.io/github/workflow/status/vortesnail/async-import-react-component/Deploy%20GitHub%20Pages?label=Build%20And%20Test&logo=github&style=flat-square"/>
+    </a>
     <a href="https://codecov.io/gh/vortesnail/async-import-react-component">
       <img alt="Tests Passing" src="https://img.shields.io/codecov/c/github/vortesnail/async-import-react-component?style=flat-square" />
     </a>
