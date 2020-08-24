@@ -8,10 +8,10 @@ const PROJECT_PATH = path.resolve(__dirname, '../')
 const PROJECT_NAME = path.parse(PROJECT_PATH).name
 
 // 是否开启 modules 缓存
-const IS_OPEN_HARD_SOURCE = true
+const IS_OPEN_HARD_SOURCE = false
 
 // 是否开启 bundle 包分析
-const shouldOpenAnalyzer = true
+const shouldOpenAnalyzer = false
 
 module.exports = {
   isDev,
