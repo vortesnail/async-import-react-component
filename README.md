@@ -5,10 +5,10 @@
 </p>
   <p align="center">
     <a href="https://github.com/vortesnail/async-import-react-component/actions">
-      <img alt="Build And Test" src="https://img.shields.io/github/workflow/status/vortesnail/async-import-react-component/Deploy%20GitHub%20Pages?label=Build%20And%20Test&logo=github&style=flat-square"/>
+      <img alt="Build And Test" src="https://img.shields.io/github/workflow/status/vortesnail/async-import-react-component/Build%20And%20Test?color=green&label=Build%20And%20Test&logo=github&style=flat-square"/>
     </a>
     <a href="https://codecov.io/gh/vortesnail/async-import-react-component">
-      <img alt="Tests Passing" src="https://img.shields.io/codecov/c/github/vortesnail/async-import-react-component?style=flat-square" />
+      <img alt="Tests Passing" src="https://img.shields.io/codecov/c/github/vortesnail/async-import-react-component?color=green&logo=codecov&style=flat-square" />
     </a>
     <br />
   </p>
