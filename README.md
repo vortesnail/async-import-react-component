@@ -46,12 +46,16 @@ You can use two methods, one is to pass in the function directly, and the other 
 - **Directly**
 
 ```javascript
+import getAsyncComponent from 'async-import-react-component'
+
 const ComponentOne = getAsyncComponent(() => import('Components/ComponentOne'))
 ```
 
 - **Optically**
 
 ```javascript
+import getAsyncComponent from 'async-import-react-component'
+
 const ComponentTwo = getAsyncComponent({
   resolve: () => import('Components/ComponentTwo'),
   loading: <div>ComponentTwo is loading...</div>,
