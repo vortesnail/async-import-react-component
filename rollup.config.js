@@ -8,7 +8,7 @@ const extensions = ['.js', '.jsx', '.ts', '.tsx']
 
 export default {
   input: 'src/asyncComponent.tsx',
-  external: ['react'],
+  external: ['react', 'react-dom'],
   output: [
     {
       // esm
@@ -17,6 +17,7 @@ export default {
       name: 'getAsyncComponent',
       globals: {
         react: 'React',
+        'react-dom': 'ReactDOM',
       },
     },
   ],

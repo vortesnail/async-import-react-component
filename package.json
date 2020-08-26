@@ -1,6 +1,6 @@
 {
   "name": "async-import-react-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Support react components import asynchronously, with support for code splitting",
   "main": "dist/asyncComponent.min.js",
   "typings": "dist/asyncComponent.d.ts",
@@ -140,13 +140,15 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.0.9",
-    "webpackbar": "^4.0.0"
+    "webpackbar": "^4.0.0",
+    "@babel/runtime-corejs3": "^7.11.0"
   },
   "dependencies": {
-    "@babel/runtime-corejs3": "^7.11.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
     "react-loading": "^2.0.3",
     "react-syntax-highlighter": "^13.4.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
   }
 }
