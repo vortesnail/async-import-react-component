@@ -16,7 +16,7 @@ jobs:
         run: npm install && npm run build-page
 
       - name: Test
-        run: npm install && npm run test && npm run report-coverage
+        run: npm install && npm install react react-dom --save && npm run test && npm run report-coverage
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.5.9
